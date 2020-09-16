@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     
-        <link rel="canonical" href="http://localhost:4001/impressum/">
+        <link rel="canonical" href="https://www.schadenfreiheitsklassen.info/impressum/">
     
 
     <meta name="robots" content="noindex, follow" />
@@ -21,8 +21,7 @@
     
 
 
-
-    <title>Imprint » schadenfreiheitsklassen.info</title>
+    <title>schadenfreiheitsklassen.info</title>
 
     
 
@@ -45,7 +44,7 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 
-    <link rel="alternate" type="application/rss+xml" title="schadenfreiheitsklassen.info" href="http://localhost:4001/feed.xml" />
+    <link rel="alternate" type="application/rss+xml" title="schadenfreiheitsklassen.info" href="https://www.schadenfreiheitsklassen.info/feed.xml" />
 
     <style amp-custom>
         :root {
@@ -1192,84 +1191,74 @@ table thead {
 }
 
         .breadcrumbs {
-    padding: 0;
+    /*padding-left: 0;*/
+    /*list-style: none;*/
+    /*margin: 0;*/
+    /*line-height: normal;*/
+    /*display: flex;*/
+    padding-left: 0;
     margin: 0;
-}
-ul.breadcrumbs {
-    list-style-type: none;
-}
-ol.breadcrumbs {
+    line-height: 36px;
     list-style: none;
 }
-
-@media only screen and (min-width: 48em) {
-    .breadcrumbs {
-        margin: 0;
-        list-style: none;
-        line-height: normal;
-        display: flex;
-        padding-left: 0;
-    }
-}
-
-.breadcrumbs::before,
-.breadcrumbs::after {
+.breadcrumbs::before, .breadcrumbs::after {
     display: table;
-    content: " ";
+    content: ' ';
     -webkit-flex-basis: 0;
     -ms-flex-preferred-size: 0;
     flex-basis: 0;
     -webkit-box-ordinal-group: 2;
     -webkit-order: 1;
     -ms-flex-order: 1;
-    order: 1;
-}
+    order: 1; }
 .breadcrumbs::after {
-    clear: both;
-}
+    clear: both; }
 .breadcrumbs li {
     float: left;
-    font-size: 0.75rem;
-    color: rgb(var(--300));
+    line-height: 13px;
+    font-size: 13px;
+    color: var(--dark-60);
     cursor: default;
 }
 .breadcrumbs li:not(:last-child)::after {
     position: relative;
-    margin: 0 0.5rem 0 0.25rem;
-    font-size: 0.75rem;
-    content: ">";
-    color: rgb(var(--300));
+    margin: 0 15px;
+    opacity: 1;
+    content: "›";
+    color: var(--dark-60);
 }
 .breadcrumbs a {
-    color: rgb(var(--300));
     text-decoration: none;
+    color: var(--dark-60);
 }
+.breadcrumbs a:hover {
+    text-decoration: underline; }
 
-@media only screen and (max-width: 63.9375em) {
-    ul.breadcrumbs li:not(:last-child) {
+@media (max-width: 39.9375em) {
+    .breadcrumbs li:not(:last-child) {
         display: none;
     }
-    .breadcrumbs li h1 {
-        font-size: 28px;
-        /*color: rgb(var(--900));*/
+    .breadcrumbs li {
+        padding: .5rem .25rem 0 .25rem;
     }
-}
-@media only screen and (max-width: 47.9375em) {
     .breadcrumbs li h1 {
-        /*font-size: 28px;*/
-        color: rgb(var(--900));
+        font-size: 14px;
+        color: var(--dark-60);
+        /*font-weight: bold;*/
     }
 }
 
-@media only screen and (min-width: 48em) {
+@media (min-width: 40em) {
     .breadcrumbs li h1 {
+        line-height: 13px;
         margin: 0;
-        font-size: 0.75rem;
+        font-size: 13px;
         font-weight: normal;
         white-space: nowrap;
         flex-grow: 1;
     }
 }
+
 
 
         .c-Hero {
@@ -2442,6 +2431,7 @@ a.bottom-teaser-button:hover {
     
 </head>
 
+
 <body>
 
 <style>
@@ -2454,7 +2444,12 @@ a.bottom-teaser-button:hover {
         margin: 0 auto;
     }
 
-    @media (max-width: 48em) {
+    @media (min-width: 48em) {
+        table tr:hover {
+            background: #efefef;
+        }
+    }
+    @media (max-width: 47.9375em) {
         table > thead > tr th:nth-child(2) {
             display: none;
         }
@@ -2565,7 +2560,65 @@ a.bottom-teaser-button:hover {
 
 <div class="wrapper">
     <div class="content-wrapper">
-        <h1>Impressum</h1>
+        <div class="breadcrumbs-wrapper show-for-large">
+            <div class="product-header-breadcrumbs">
+                <nav role="menubar" aria-label="breadcrumbs"><ul
+            class="breadcrumbs"
+            itemscope="itemscope"
+            itemtype="https://schema.org/BreadcrumbList"
+    >
+
+        <li
+                itemprop="itemListElement"
+                itemscope="itemscope"
+                itemtype="https://schema.org/ListItem"
+        >
+
+            <a
+                    href="https://www.schadenfreiheitsklassen.info"
+                    itemprop="item"
+            >
+
+                <span itemprop="name">Home</span>
+
+            </a><meta itemprop="position" content="1" />
+
+        </li>
+
+
+        <li
+                itemprop="itemListElement"
+                itemscope="itemscope"
+                itemtype="https://schema.org/ListItem"
+        >
+
+            <h1
+                    class="product-headline"
+                    itemprop="name"
+            >Imprint</h1><meta itemprop="position" content="2" />
+
+        </li>
+
+    </ul>
+
+</nav><!-- /Breadcrumbs -->
+
+            </div>
+            <div class="product-header-social">
+                <div class="share-links hide-for-print">
+    <a class="share-link share-link-facebook" target="_blank" rel="nofollow noopener" href="https://www.facebook.com/sharer/sharer.php?u=https://www.schadenfreiheitsklassen.info/impressum/"><svg><use xlink:href="#facebook" /></svg></a>
+    <a class="share-link share-link-twitter" target="_blank" rel="nofollow noopener" href="https://twitter.com/intent/tweet?text=Imprint&url=https://www.schadenfreiheitsklassen.info/impressum/"><svg><use xlink:href="#twitter" /></svg></a>
+    <a class="share-link share-link-xing" target="_blank" rel="nofollow noopener" href="https://www.xing-share.com/app/user?op=share;sc_p=xing-share;url=https://www.schadenfreiheitsklassen.info"><svg><use xlink:href="#xing" /></svg></a>
+    <a class="share-link share-link-linkedin" target="_blank" rel="nofollow noopener" href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.schadenfreiheitsklassen.info/impressum/&title=Imprint&summary=&source=webjeda"><svg><use xlink:href="#linkedin" /></svg></a>
+    <a class="share-link share-link-mail" href="mailto:?subject=Imprint&amp;body=Check out this site https://www.schadenfreiheitsklassen.info/impressum/"><svg><use xlink:href="#mail" /></svg></a>
+    <button class="share-link share-link-print" on="tap:AMP.print"><svg><use xlink:href="#print" /></svg></button>
+</div>
+
+            </div>
+        </div>
+
+
+        <h1></h1>
 
 <p><strong>Betreiber / Kontakt</strong><br />
 qmedia GmbH<br />
@@ -2623,18 +2676,18 @@ Icons made by <a href="https://www.flaticon.com/authors/turkkub" title="turkkub"
                 <div class="headline">Über uns</div>
                 <div>
                     <ul>
-                        <li><a href="/impressum/">Impressum</a></li>
-                        <li><a href="/datenschutz/">Datenschutz</a></li>
+                        <li><a href="/impressum/"></a></li>
+                        <li><a href="/datenschutz/"></a></li>
                     </ul>
                 </div>
 
                 <div class="show-for-large">
                     <div class="share-links hide-for-print">
-    <a class="share-link share-link-facebook" target="_blank" rel="nofollow noopener" href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:4001/impressum/"><svg><use xlink:href="#facebook" /></svg></a>
-    <a class="share-link share-link-twitter" target="_blank" rel="nofollow noopener" href="https://twitter.com/intent/tweet?text=Imprint&url=http://localhost:4001/impressum/"><svg><use xlink:href="#twitter" /></svg></a>
-    <a class="share-link share-link-xing" target="_blank" rel="nofollow noopener" href="https://www.xing-share.com/app/user?op=share;sc_p=xing-share;url=http://localhost:4001"><svg><use xlink:href="#xing" /></svg></a>
-    <a class="share-link share-link-linkedin" target="_blank" rel="nofollow noopener" href="https://www.linkedin.com/shareArticle?mini=true&url=http://localhost:4001/impressum/&title=Imprint&summary=&source=webjeda"><svg><use xlink:href="#linkedin" /></svg></a>
-    <a class="share-link share-link-mail" href="mailto:?subject=Imprint&amp;body=Check out this site http://localhost:4001/impressum/"><svg><use xlink:href="#mail" /></svg></a>
+    <a class="share-link share-link-facebook" target="_blank" rel="nofollow noopener" href="https://www.facebook.com/sharer/sharer.php?u=https://www.schadenfreiheitsklassen.info/impressum/"><svg><use xlink:href="#facebook" /></svg></a>
+    <a class="share-link share-link-twitter" target="_blank" rel="nofollow noopener" href="https://twitter.com/intent/tweet?text=Imprint&url=https://www.schadenfreiheitsklassen.info/impressum/"><svg><use xlink:href="#twitter" /></svg></a>
+    <a class="share-link share-link-xing" target="_blank" rel="nofollow noopener" href="https://www.xing-share.com/app/user?op=share;sc_p=xing-share;url=https://www.schadenfreiheitsklassen.info"><svg><use xlink:href="#xing" /></svg></a>
+    <a class="share-link share-link-linkedin" target="_blank" rel="nofollow noopener" href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.schadenfreiheitsklassen.info/impressum/&title=Imprint&summary=&source=webjeda"><svg><use xlink:href="#linkedin" /></svg></a>
+    <a class="share-link share-link-mail" href="mailto:?subject=Imprint&amp;body=Check out this site https://www.schadenfreiheitsklassen.info/impressum/"><svg><use xlink:href="#mail" /></svg></a>
     <button class="share-link share-link-print" on="tap:AMP.print"><svg><use xlink:href="#print" /></svg></button>
 </div>
 
