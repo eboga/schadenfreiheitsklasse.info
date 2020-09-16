@@ -1,0 +1,8 @@
+{{ site.data.amounts.current.max-percentage }}
+{{ site.data.amounts.current.year }}
+
+{{ site.data.amounts.single.max-amount }}
+{{ site.data.amounts.single.max-deductable-amount }}
+
+{{ site.data.amounts.couple.max-amount }}
+{{ site.data.amounts.couple.max-deductable-amount }}
